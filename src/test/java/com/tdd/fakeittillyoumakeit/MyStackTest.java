@@ -10,8 +10,9 @@ public class MyStackTest {
     void pop_should_return_pushed_value() {
         MyStack stack = new MyStack();
         stack.push(1);
-        assertThat(stack.pop()).isEqualTo(1);
         stack.push(2);
+
         assertThat(stack.pop()).isEqualTo(2);
+        assertThat(stack.pop()).isEqualTo(1);
     }
 }

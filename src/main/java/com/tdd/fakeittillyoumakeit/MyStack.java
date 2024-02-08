@@ -2,13 +2,15 @@ package com.tdd.fakeittillyoumakeit;
 
 public class MyStack {
 
-    private int value;
+    private int STACK_SIZE = 100;
+    private int[] value = new int[STACK_SIZE];
+    private int index = 0;
 
     public int pop() {
-        return value;
+        return value[--index];
     }
 
     public void push(int value) {
-        this.value = value;
+        this.value[index++] = value;
     }
 }
