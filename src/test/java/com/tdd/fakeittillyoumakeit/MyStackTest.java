@@ -4,6 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
 
+// fake it till you make it + one to many 예제
 public class MyStackTest {
 
     @Test

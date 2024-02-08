@@ -52,3 +52,8 @@
 - one-to-many 기법은 스택이 하나의 원소에 대해서만 잘 동작하도록 만들라고 조언함
 - singular case를 먼저 성공시키고, plural case를 성공시키는 것이 One to Many를 실천하는 방법이다.
 
+### Triangulation
+
+- 하나의 테스트가 아니라 여러개의 테스트를 추가함으로써 문제와 해결책을 좀 더 명확히 하는 기법
+- "As the tests get more specific, the code gets more GENERIC"
+- 하나의 테스트만 존재할 때는 fake할 수 있다(상수를 반환함으로써). 하지만 상수로 처리 불가한 테스트를 추가하면(삼각법에서 2개 이상의 지점을 사용하는 것처럼) fake할 수 없게 된다.
